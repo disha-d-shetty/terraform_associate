@@ -1,0 +1,58 @@
+######## Set the TF_LOG and the the TF_LOG_PATH inside folder on cmd #############
+
+
+
+2025-07-05T18:43:50.198+0530 [INFO]  Terraform version: 1.12.2
+2025-07-05T18:43:50.199+0530 [INFO]  Go runtime version: go1.24.2
+2025-07-05T18:43:50.199+0530 [INFO]  CLI args: []string{"terraform", "plan", "-var-file=dev.tfvars"}
+2025-07-05T18:43:50.204+0530 [INFO]  CLI command args: []string{"plan", "-var-file=dev.tfvars"}
+2025-07-05T18:43:50.837+0530 [INFO]  backend/local: starting Plan operation
+2025-07-05T18:43:50.846+0530 [INFO]  provider: configuring client automatic mTLS
+2025-07-05T18:43:51.165+0530 [INFO]  provider.terraform-provider-aws_v6.0.0_x5.exe: configuring server automatic mTLS: timestamp="2025-07-05T18:43:51.165+0530"
+2025-07-05T18:43:53.941+0530 [WARN]  provider: plugin failed to exit gracefully
+2025-07-05T18:43:54.996+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.0.0/windows_amd64/terraform-provider-aws_v6.0.0_x5.exe id=27396
+2025-07-05T18:43:55.012+0530 [INFO]  provider: configuring client automatic mTLS
+2025-07-05T18:43:55.292+0530 [INFO]  provider.terraform-provider-aws_v6.0.0_x5.exe: configuring server automatic mTLS: timestamp="2025-07-05T18:43:55.291+0530"
+2025-07-05T18:43:57.397+0530 [WARN]  provider: plugin failed to exit gracefully
+2025-07-05T18:43:58.446+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.0.0/windows_amd64/terraform-provider-aws_v6.0.0_x5.exe id=19764
+2025-07-05T18:43:58.447+0530 [INFO]  backend/local: plan calling Plan
+2025-07-05T18:43:58.451+0530 [INFO]  provider: configuring client automatic mTLS
+2025-07-05T18:43:58.753+0530 [INFO]  provider.terraform-provider-aws_v6.0.0_x5.exe: configuring server automatic mTLS: timestamp="2025-07-05T18:43:58.749+0530"
+2025-07-05T18:43:58.866+0530 [INFO]  provider.terraform-provider-aws_v6.0.0_x5.exe: Retrieved credentials: @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: C:\Users\disshetty\.aws\credentials" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=ed6eadd0-ca4f-59b9-b84f-21ebcac543c9 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 timestamp="2025-07-05T18:43:58.866+0530"
+2025-07-05T18:44:00.012+0530 [INFO]  provider.terraform-provider-aws_v6.0.0_x5.exe: Retrieved caller identity from STS: tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_req_id=ed6eadd0-ca4f-59b9-b84f-21ebcac543c9 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2025-07-05T18:44:00.012+0530"
+2025-07-05T18:44:00.029+0530 [INFO]  provider.terraform-provider-aws_v6.0.0_x5.exe: overriding provider-configured AWS API region: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws override_region=us-east-2 tf_aws.service_package=ec2 tf_data_source_type=aws_ami tf_req_id=f7108ae1-2d92-088b-9d9e-ba3efc5a8523 tf_rpc=ReadDataSource @caller=github.com/hashicorp/terraform-provider-aws/internal/service/ec2/service_package_gen.go:1757 original_region=us-east-1 service=ec2 timestamp="2025-07-05T18:44:00.029+0530"
+2025-07-05T18:44:00.030+0530 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_eip.public_ip[1], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .tags: planned value cty.UnknownVal(cty.Map(cty.String)) does not match config value cty.MapVal(map[string]cty.Value{"Name":cty.StringVal("Terraform-1"), "Time":cty.UnknownVal(cty.String).RefineNotNull()})
+2025-07-05T18:44:00.030+0530 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_eip.public_ip[0], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .tags: planned value cty.UnknownVal(cty.Map(cty.String)) does not match config value cty.MapVal(map[string]cty.Value{"Name":cty.StringVal("Terraform-0"), "Time":cty.UnknownVal(cty.String).RefineNotNull()})
+2025-07-05T18:44:00.030+0530 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_security_group.allow_tls, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+2025-07-05T18:44:00.030+0530 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_iam_role.test_role, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_detach_policies: planned value cty.False for a non-computed attribute
+      - .path: planned value cty.StringVal("/") for a non-computed attribute
+      - .max_session_duration: planned value cty.NumberIntVal(3600) for a non-computed attribute
+      - .assume_role_policy: planned value cty.StringVal("{\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"ec2.amazonaws.com\"}}],\"Version\":\"2012-10-17\"}") does not match config value cty.StringVal("{\r\n  \"Version\": \"2012-10-17\",\r\n  \"Statement\": [\r\n    {\r\n      \"Effect\": \"Allow\",\r\n      \"Principal\": {\r\n        \"Service\": \"ec2.amazonaws.com\"\r\n      },\r\n      \"Action\": \"sts:AssumeRole\"\r\n    }\r\n  ]\r\n}")
+      - .inline_policy: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-07-05T18:44:01.727+0530 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_instance.example, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .get_password_data: planned value cty.False for a non-computed attribute
+      - .source_dest_check: planned value cty.True for a non-computed attribute
+      - .user_data_replace_on_change: planned value cty.False for a non-computed attribute
+      - .metadata_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .root_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .capacity_reservation_specification: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .ephemeral_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .maintenance_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .network_interface: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .private_dns_name_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .cpu_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .ebs_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .enclave_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .instance_market_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-07-05T18:44:03.730+0530 [WARN]  provider: plugin failed to exit gracefully
+2025-07-05T18:44:04.791+0530 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.0.0/windows_amd64/terraform-provider-aws_v6.0.0_x5.exe id=12756
+2025-07-05T18:44:04.799+0530 [INFO]  backend/local: plan operation completed

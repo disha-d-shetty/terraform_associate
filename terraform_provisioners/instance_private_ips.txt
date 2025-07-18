@@ -1,0 +1,5 @@
+arn:aws:ec2:us-east-1:954976296250:instance/i-00b2a28347911399e-10.0.0.5 
+arn:aws:ec2:us-east-1:954976296250:instance/i-0755cbea34c92156f-10.0.0.8 
+arn:aws:ec2:us-east-1:954976296250:instance/i-00403b4d5bdb6ba07-10.0.0.6 
+arn:aws:ec2:us-east-1:954976296250:instance/i-0b23cc9f6a37209f1-10.0.0.9 
+arn:aws:ec2:us-east-1:954976296250:instance/i-0da3d5e89eff0fb7f-10.0.0.15 
