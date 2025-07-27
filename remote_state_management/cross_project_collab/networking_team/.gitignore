@@ -3,4 +3,3 @@
 terraform.tfstate
 terraform.tfstate.backup
 state_files/*
-.terraform.lock.hcl
