@@ -47,14 +47,13 @@ Commands::
     24. terraform workspace list
     25. terraform workspace select workspace_name
     26. terraform workspace new workspace_name
-    27. 
+    27. terraform plan -generate-config-out="resource.tf"
+    28. terraform init -upgrade
 
 Note::
 
     If u see issue/bugs in the resources/providers, report it under the github page
     link for terraform/aws- https://github.com/hashicorp/terraform-provider-aws/issues 
     link for terraform core code - https://github.com/hashicorp/terraform 
-
-
 
 

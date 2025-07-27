@@ -6,6 +6,8 @@ Link - https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/
 Terminology ::
 - MODULE/EC2/instance or MODULE/EC2/in-built are called "child modules"
 - module "customised_eip" these are called "root modules"
+
+
 Folder related learning::
 
 1. to use in built modules, u need to have git installed.
